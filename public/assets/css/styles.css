@@ -1545,3 +1545,22 @@ textarea.contect_input {
 .swiper-wrapper{
     margin: 0px 0px 40px 0px;
 }
+
+
+
+
+.container-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 2rem;
+}
+
+.row-form {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
