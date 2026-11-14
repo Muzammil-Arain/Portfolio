@@ -54,6 +54,38 @@
       '<svg class="icon icon--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.5 2.5 4.5-5"/></svg>',
     "life-buoy":
       '<svg class="icon icon--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="m7 7 2.2 2.2M17 7l-2.2 2.2M7 17l2.2-2.2M17 17l-2.2-2.2"/></svg>',
+    sparkles:
+      '<svg class="icon icon--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3l1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5L12 3z"/><path d="M19 14l.8 2.2L22 17l-2.2.8L19 20l-.8-2.2L16 17l2.2-.8L19 14z"/><path d="M5 15l.6 1.6L7.2 17.2 5.6 17.8 5 19.4l-.6-1.6L2.8 17.2l1.6-.6L5 15z"/></svg>',
+    bug:
+      '<svg class="icon icon--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 9h8"/><path d="M8 15h8"/><rect x="7" y="6" width="10" height="14" rx="5"/><path d="M12 6V3"/><path d="m4 9 3 1"/><path d="m20 9-3 1"/><path d="m4 16 3-1"/><path d="m20 16-3-1"/></svg>',
+    refresh:
+      '<svg class="icon icon--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg>',
+    layers:
+      '<svg class="icon icon--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m12 2 9 5-9 5-9-5 9-5z"/><path d="m3 12 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg>',
+    search:
+      '<svg class="icon icon--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>',
+    eye:
+      '<svg class="icon icon--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>',
+    zap:
+      '<svg class="icon icon--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg>',
+    cursor:
+      '<svg class="icon icon--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4l7 16 2.5-6.5L20 11 4 4z"/></svg>',
+    copilot:
+      '<svg class="icon icon--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="9" cy="10" r="3"/><circle cx="15" cy="10" r="3"/><path d="M4 19c1.5-3 4-4.5 8-4.5S18.5 16 20 19"/></svg>',
+    chatgpt:
+      '<svg class="icon icon--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3a4.5 4.5 0 0 1 4 6.5A4.5 4.5 0 0 1 14 18.8V21l-3-1.5A4.5 4.5 0 0 1 8 9.5 4.5 4.5 0 0 1 12 3z"/></svg>',
+    gemini:
+      '<svg class="icon icon--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2v20M4.5 6.5 19.5 17.5M4.5 17.5 19.5 6.5"/></svg>',
+    grok:
+      '<svg class="icon icon--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>',
+    deepseek:
+      '<svg class="icon icon--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8"/><path d="M12 8v8l4-4"/></svg>',
+    pyright:
+      '<svg class="icon icon--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 11 2 2 4-5"/><rect x="4" y="3" width="16" height="18" rx="2"/></svg>',
+    git:
+      '<svg class="icon icon--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="12" r="2.5"/><circle cx="6" cy="18" r="2.5"/><path d="M6 8.5v7"/><path d="M8.2 7.2 15.8 11"/></svg>',
+    vscode:
+      '<svg class="icon icon--lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m4 6 7-3 9 4v10l-9 4-7-3V6z"/><path d="m11 3v18"/><path d="m4 6 7 4 9-4"/></svg>',
     linkedin:
       '<svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.1c.5-1 1.8-2.1 3.7-2.1 4 0 4.7 2.6 4.7 6V23h-4v-6.6c0-1.6 0-3.6-2.2-3.6s-2.5 1.7-2.5 3.5V23h-4V8.5z"/></svg>',
     github:
@@ -124,9 +156,12 @@
     const aboutText = $("#about-text");
     aboutText.innerHTML = (cfg.aboutText || []).map((p) => `<p>${escapeHtml(p)}</p>`).join("");
 
-    ["#hero-cv", "#about-cv", "#contact-cv"].forEach((sel) => {
+    ["#hero-cv", "#about-cv", "#contact-cv", "#footer-cv"].forEach((sel) => {
       const el = $(sel);
-      if (el) el.setAttribute("href", cfg.resumePath);
+      if (el) {
+        el.setAttribute("href", cfg.resumePath);
+        el.setAttribute("download", "Muhammad-Muzammil-CV.pdf");
+      }
     });
 
     const statusDot = $(".hero__status-dot");
@@ -203,7 +238,7 @@
     `;
   }
 
-  /* ---------- Skills / Services / Process / Why ---------- */
+  /* ---------- Skills / AI Tools / Workflow / Services ---------- */
   function renderSkills() {
     $("#skills-grid").innerHTML = cfg.skills
       .map(
@@ -216,6 +251,47 @@
         <div class="skill-card__tags">
           ${s.items.map((item) => `<span class="tag">${escapeHtml(item)}</span>`).join("")}
         </div>
+      </article>`
+      )
+      .join("");
+  }
+
+  function renderAiTools() {
+    const grid = $("#ai-tools-grid");
+    if (!grid) return;
+    const tools = cfg.aiTools || [];
+    grid.innerHTML = tools
+      .map(
+        (t) => `
+      <article class="ai-tool-card reveal">
+        <div class="ai-tool-card__top">
+          <div class="ai-tool-card__icon">${icon(t.icon || "sparkles")}</div>
+          <div>
+            <p class="ai-tool-card__category">${escapeHtml(t.category)}</p>
+            <h3>${escapeHtml(t.name)}</h3>
+          </div>
+        </div>
+        <p class="ai-tool-card__desc">${escapeHtml(t.description)}</p>
+        <p class="ai-tool-card__usage"><strong>How I use it:</strong> ${escapeHtml(t.usage)}</p>
+      </article>`
+      )
+      .join("");
+  }
+
+  function renderAiWorkflow() {
+    const note = $("#ai-workflow-note");
+    const grid = $("#ai-workflow-grid");
+    if (note) {
+      note.innerHTML = `<p>${escapeHtml(cfg.aiWorkflowNote || "")}</p>`;
+    }
+    if (!grid) return;
+    grid.innerHTML = (cfg.aiWorkflow || [])
+      .map(
+        (w) => `
+      <article class="ai-workflow-card reveal">
+        <div class="ai-workflow-card__icon">${icon(w.icon || "sparkles")}</div>
+        <h3>${escapeHtml(w.title)}</h3>
+        <p>${escapeHtml(w.description)}</p>
       </article>`
       )
       .join("");
@@ -301,31 +377,6 @@
     } else {
       note.hidden = true;
     }
-  }
-
-  /* ---------- Testimonials ---------- */
-  function renderTestimonials() {
-    const wrap = $("#testimonials-wrap");
-    const list = cfg.testimonials || [];
-    if (!list.length) {
-      wrap.innerHTML = `
-        <div class="testimonials__empty reveal">
-          <h3>Client testimonials coming soon</h3>
-          <p>Genuine feedback will appear here. This section intentionally has no fabricated quotes.</p>
-          <p class="placeholder-note" style="margin-top:0.75rem">EDITABLE: Add real testimonials in assets/js/config.js → testimonials[]</p>
-        </div>`;
-      return;
-    }
-    wrap.innerHTML = `<div class="testimonials__grid">${list
-      .map(
-        (t) => `
-      <blockquote class="testimonial-card reveal">
-        <p>“${escapeHtml(t.quote)}”</p>
-        <strong>${escapeHtml(t.name)}</strong>
-        <span>${escapeHtml(t.role || "")}</span>
-      </blockquote>`
-      )
-      .join("")}</div>`;
   }
 
   /* ---------- Projects ---------- */
@@ -467,7 +518,19 @@
         <h3>Technologies Used</h3>
         <div class="skill-card__tags">${tech}</div>
       </div>
+      ${
+        (project.integrations || []).length
+          ? `<div class="modal__section"><h3>Integrations</h3><ul>${(project.integrations || [])
+              .map((i) => `<li>${escapeHtml(i)}</li>`)
+              .join("")}</ul></div>`
+          : ""
+      }
       ${section("Challenges & Solutions", project.challenges)}
+      ${
+        project.outcome && !isEditablePlaceholder(project.outcome)
+          ? section("Project Outcome", project.outcome)
+          : ""
+      }
       <div class="modal__actions">${live}${gh}<button type="button" class="btn btn--ghost" data-close-modal>Close</button></div>
     `;
 
@@ -721,11 +784,12 @@
   function init() {
     applyProfile();
     renderSkills();
+    renderAiTools();
+    renderAiWorkflow();
     renderServices();
     renderProcess();
     renderWhy();
     renderExperience();
-    renderTestimonials();
     renderFilters();
     renderProjects();
     bindNavigation();

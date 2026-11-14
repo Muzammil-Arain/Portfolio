@@ -1,8 +1,12 @@
 # Muhammad Muzammil — Portfolio
 
-Premium personal portfolio for **Muhammad Muzammil**, React Native Developer (Karachi, Pakistan).
+Premium personal portfolio for **Muhammad Muzammil**, positioned as:
 
-Built with **HTML5**, **CSS3**, and **vanilla JavaScript** (no React/Vue/Angular/Bootstrap/Tailwind).
+**React Native Developer | AI-Assisted Software Engineer** (Karachi, Pakistan)
+
+Built with **HTML5**, **CSS3**, and **vanilla JavaScript** only (no React / Next.js / Vue / Angular / Bootstrap / Tailwind).
+
+---
 
 ## Quick start
 
@@ -37,26 +41,25 @@ Project ID is configured in `.firebaserc`.
 
 ```
 Portfolio/
-├── backup-old-portfolio/     # Snapshot of the previous site
-├── public/                   # Deployable website (Firebase "public")
+├── backup-old-portfolio/              # Snapshot of the original legacy site
+├── backup-pre-ai-upgrade-*/           # Snapshot taken before this AI upgrade
+├── public/                            # Deployable website (Firebase "public")
 │   ├── index.html
 │   └── assets/
-│       ├── css/styles.css
+│       ├── css/styles.css             # Dark/light design system
 │       ├── js/
-│       │   ├── config.js     # ★ Edit content here
-│       │   └── main.js
+│       │   ├── config.js              # ★ Edit all content here
+│       │   └── main.js                # Interactions & rendering
 │       ├── images/
-│       │   ├── profile.png   # Profile photo
+│       │   ├── profile.jpg
 │       │   ├── about.jpg
-│       │   └── projects/     # Project screenshots
+│       │   └── projects/              # Project screenshots
 │       ├── resume/
 │       │   └── Muhammad-Muzammil-CV.pdf
 │       └── icons/favicon.jpg
 ├── firebase.json
 └── README.md
 ```
-
-The previous portfolio is also preserved on git branch `backup/old-portfolio-pre-redesign`.
 
 ---
 
@@ -66,31 +69,48 @@ Almost all content lives in:
 
 **`public/assets/js/config.js`**
 
-Update:
-
 | Field | Purpose |
 | --- | --- |
 | `name`, `title`, `experienceYears`, `location` | Profile basics |
 | `availability` | Hero status text |
 | `contact.*` | Email, WhatsApp, LinkedIn, GitHub |
 | `resumePath` | CV download path |
-| `skills`, `services`, `process`, `whyHire` | Section content |
-| `experience`, `education` | Career timeline |
+| `skills` | Technical skills by category |
+| `aiTools` | AI-Powered Development & Modern Tools |
+| `aiWorkflow` | AI-Assisted Development Workflow |
+| `services`, `process`, `whyHire` | Services / process / value props |
+| `experience`, `education` | Career timeline (from latest CV) |
 | `projects` | Featured work + case studies |
-| `testimonials` | Only add **genuine** quotes |
 | `form.formEndpoint` | Formspree URL |
 
 After editing `config.js`, refresh the browser. No build step required.
 
 ---
 
-## Update profile photo
+## Website sections
 
-1. Replace `public/assets/images/profile.png` (or add `profile.jpg`).
-2. If you change the filename, update `profileImage` in `config.js`.
-3. Recommended size: square, at least 800×800.
+1. Hero  
+2. About Me  
+3. Technical Skills  
+4. AI-Powered Development & Modern Tools  
+5. AI-Assisted Development Workflow  
+6. Services  
+7. Featured Projects  
+8. Professional Experience  
+9. Development Process  
+10. Why Hire Me?  
+11. Contact + Downloadable CV  
+12. Footer  
 
-About section image: `public/assets/images/about.jpg` (`aboutImage` in config).
+---
+
+## Theme system
+
+- Default preference: **dark premium blue** (`#080D18` palette)
+- Optional **light mode** toggle
+- First visit: respects `prefers-color-scheme` when no saved preference exists
+- Toggle persists in `localStorage` key `portfolio-theme`
+- Anti-flash script runs in `index.html` `<head>`
 
 ---
 
@@ -109,48 +129,6 @@ Do not invent credentials in the PDF.
 
 ---
 
-## Add or update projects
-
-In `config.js` → `projects` array, add an object:
-
-```js
-{
-  id: "my-app",
-  title: "My App",
-  category: ["mobile", "business"], // used by filters
-  categoryLabel: "Mobile Application",
-  image: "assets/images/projects/my-app.jpg",
-  shortDescription: "Short card summary.",
-  technologies: ["React Native", "Firebase"],
-  features: ["Feature one", "Feature two"],
-  liveUrl: "https://play.google.com/...",
-  githubUrl: "", // optional
-  overview: "...",
-  problem: "...",
-  role: "...",
-  solution: "...",
-  challenges: "...",
-  screenshots: ["assets/images/projects/my-app.jpg"],
-}
-```
-
-Place screenshots in `public/assets/images/projects/`.
-
-Fields starting with `/* EDITABLE` are intentional placeholders — replace them with real case-study details.
-
----
-
-## Update experience
-
-Edit `experience` (and optionally `education`) in `config.js`.  
-Do not invent employers or dates. The current entries were preserved from the previous portfolio:
-
-- Intellexal Solutions — Mobile App Developer (2024 — Present)
-- Parallel Solution — Jr Mobile App Developer (2022 — 2024)
-- Ayan Tech — Web & Mobile App Development (2021 — 2022)
-
----
-
 ## Contact information
 
 Edit `contact` in `config.js`:
@@ -159,13 +137,11 @@ Edit `contact` in `config.js`:
 contact: {
   email: "muzammilarain912@gmail.com",
   phone: "+923100012746",
-  whatsapp: "923100012746", // digits only, country code included
+  whatsapp: "923100012746",
   linkedin: "https://www.linkedin.com/in/muhammad-muzammil-2b9212217/",
   github: "https://github.com/Muzammil-Arain",
 }
 ```
-
-WhatsApp inquiry uses `whatsappPrefill` for the prefilled message.
 
 ---
 
@@ -190,49 +166,49 @@ Until this is set, the form shows a clear setup message and does **not** claim s
 
 ---
 
-## Theme system
+## Experience (from latest CV)
 
-- Default: **dark premium blue**
-- First visit: respects `prefers-color-scheme` when no saved preference exists
-- Toggle persists in `localStorage` key `portfolio-theme`
-- Anti-flash script runs in `index.html` `<head>`
+- **CMolds** — React Native Developer (July 2025 — Present)
+- **Intellexal Solutions** — Mid-Level React Native Developer (March 2022 — June 2025)
 
----
+Education:
 
-## Features included
-
-- Sticky responsive navigation + hamburger menu
-- Dark / light themes
-- Skills, services, process, why-hire sections
-- Project filters + detail modal case studies
-- Experience timeline
-- Testimonials empty state (no fabricated quotes)
-- Contact form validation + WhatsApp CTA
-- CV download links
-- Scroll reveal, active section, back-to-top
-- SEO meta tags, Open Graph, accessibility basics
-- Reduced-motion support
+- Intermediate (Commerce) — Karachi Board
+- Web & App Development Course
 
 ---
 
 ## Genuine projects preserved
 
-From the previous portfolio (Play Store links kept):
+Play Store apps kept from the existing portfolio:
 
-| Project | Company context |
+| Project | Notes |
 | --- | --- |
-| Dispute | Parallel Solution |
-| Fit For All | Parallel Solution |
-| Rapid Beauty | Parallel Solution |
-| Sail | Parallel Solution |
-| My Score | Parallel Solution |
-| eViale | Intellexal Solutions |
+| Dispute | Google Play listing preserved |
+| Fit For All | Google Play listing preserved |
+| Rapid Beauty | Google Play listing preserved |
+| Sail | Google Play listing preserved |
+| My Score | Google Play listing preserved |
+| eViale | Intellexal Solutions (CV + portfolio verified) |
+| Hylpers | Live — `com.app.hylpers` |
+| Walk Plus | CMolds — `com.cmolds.walkplus` |
+| SyncdFlow | CMolds — `com.cmolds.syncedflow` |
+
+Some case-study fields are marked editable in `config.js` — fill them with real details when ready.
+
+---
+
+## AI tools presented as professional workflow tools
+
+- Cursor, GitHub Copilot  
+- ChatGPT, Google Gemini, Grok, DeepSeek  
+- Pyright, Git, GitHub, VS Code  
+
+These are shown as tools you **use**, not products you built.
 
 ---
 
 ## Notes
 
-- Testimonials were **not** carried over from commented template placeholders in the old site.
-- Some case-study fields are marked editable — fill them with real details when ready.
-- Old CSS/JS (including Swiper) remains under `public/assets` legacy paths but is unused by the redesign; safe to delete later if desired.
-- Backup copy: `backup-old-portfolio/` and git branch `backup/old-portfolio-pre-redesign`.
+- Formspree/EmailJS is not fake-wired — add your endpoint when ready.
+- Backups: `backup-old-portfolio/` and `backup-pre-ai-upgrade-*`.
